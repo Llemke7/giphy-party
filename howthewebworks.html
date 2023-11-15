@@ -1,0 +1,33 @@
+## **Part One: Solidify Terminology**
+
+In your own terms, define the following terms:
+
+- What is HTTP? a hypertext that is used to load web pages using hypertext
+- What is a URL? an address to a location in the web
+- What is DNS? DNS is used to connect web browsers to websites
+- What is a query string? used to set parameters on information returned
+- What are two HTTP verbs and how are they different? GET/POST get is used to call the information where post is used to submit data that is returned 
+- What is an HTTP request? a message sent from a client to a server
+- What is an HTTP response? a message sent from a server to a client based off the http request
+- What is an HTTP header? Give a couple examples of request and response headers you have seen. contains the meta data about the request/ response
+- What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser? Browser checks cache for DNS records to find the IP address of the server.
+Browser sends an HTTP request to the server.
+Server processes the request and sends back an HTTP response.
+Browser renders the received data (HTML, CSS, JS) to display the webpage.
+
+
+
+
+
+Build a very simple HTML form that uses the GET method (it can use the same page URL for the action) when the form is submitted.  
+<form action="#" method="GET">
+    <input type="text" id="name" name="user_name">
+    <input type="submit" value="Submit">
+  </form>
+
+
+Edit the page to change the form type to POST, refresh in the browser and re-submit. Do you still see the field in the query string? Explore in Chrome how you can view the request and response headers, as well as the form data.
+<form action="#" method="POST">
+    <input type="text" id="name" name="user_name">
+    <input type="submit" value="Submit">
+  </form>
